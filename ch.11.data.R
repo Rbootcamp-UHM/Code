@@ -3,10 +3,8 @@
 ###################################################
 ### code chunk number 1: data.Rnw:47-57
 ###################################################
-read.fwf('data/94morphja.dat', widths=c(13, 1, -1, 5, 5, 5, -1, 1, 5, 5, 5,
- 3, -5, -5, -1, 1), as.is=T, strip.white=T) ->datja
-read.fwf('data/94morphpr.dat', widths=c(13, 1, -1, 5, 5, 5, -1, 1, 5, 5, 5,
- 3, -5, -5, -1, 1), as.is=T, strip.white=T) ->datpr
+datja <- read.fwf('Data/94morphja.dat', widths=c(13, 1, -1, 5, 5, 5, -1, 1, 5, 5, 5, 3, -5, -5, -1, 1), as.is=T, strip.white=T) 
+datpr <- read.fwf('Data/94morphpr.dat', widths=c(13, 1, -1, 5, 5, 5, -1, 1, 5, 5, 5, 3, -5, -5, -1, 1), as.is=T, strip.white=T) 
 names(datpr) <- names(datja) <- c('species', 'sex', 'svl', 'mass', 'tail', 'regen', 
 'forel', 'hindl', 'headl', 'lamn', 'food')
 head(datja)
@@ -44,7 +42,7 @@ sum(names(datja) != names(datpr))
 ###################################################
 ### code chunk number 6: data.Rnw:86-87
 ###################################################
-rbind(datja, datpr) -> dat
+dat <- rbind(datja, datpr)
 
 
 ###################################################
