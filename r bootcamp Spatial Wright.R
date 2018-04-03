@@ -1,3 +1,11 @@
+## Packages required for this script: (please also install dependencies)
+##	raster
+##  sp
+##  dismo
+##  maptools
+##  RgoogleMaps
+##  geosphere
+
 library(dismo)
 
 #let's get some locality data
