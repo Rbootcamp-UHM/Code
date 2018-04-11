@@ -1,7 +1,7 @@
 library(IPMpack)
 #load data
 #https://datadryad.org//resource/doi:10.5061/dryad.6575f
-#Appendix_A_Simple_data.csv
+dat <- read.csv("Appendix_A_Simple_data.csv")
 #View Data
 View(dat)
 #exploratory plot
